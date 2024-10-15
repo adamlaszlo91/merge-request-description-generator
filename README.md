@@ -6,14 +6,29 @@ A tool for creating merge request description from commit messages
 - Emojis
 
 ## Example output
+Default
 ```
 ================================
-Active branch: test_output
+Active branch: test
 Target branch: main
 
-"Refine prompt, add basic error handling, user input options, and emojis 🎉. Remove redundant code and fix memory leak for plane 4. Add reference to hotdog 🌭."
+"Removed unused code for cleanup. Added music sync feature to Bye Bye Bye functionality." 
+
+"Implemented hotdog model for database integration."
 ================================
 ```
+
+With emojis
+```
+================================
+Active branch: test
+Target branch: main
+
+"Removed unused code 🚮
+Added music sync for Bye Bye Bye 🎵
+Created Hotdog model 🌭"
+================================
+``` 
 
 ## Usage
 ### Prerequisites
