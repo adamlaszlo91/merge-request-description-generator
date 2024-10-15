@@ -11,9 +11,10 @@ def get_commit_messages(repo: git.Repo, active_branch: str, target_branch: str) 
     return commit_messages
 
 
-# TODO: Add some error handling
-
 def generate_description(host: str, commit_messages: list, emoji: bool) -> Iterator[Mapping[str, Any]]:
+    if not commit_messages:
+        return [{'message': {'content': 'No commits found.'}}]
+
     emoji_prompt = ' Use emojis.' if emoji else ''
     commit_message_str = '\n========\n'.join(commit_messages)
     client = ollama.Client(host=host)
