@@ -23,7 +23,7 @@ def generate_description(host: str, commit_messages: list, emoji: bool) -> Itera
         options={
             'temperature': 0
         },
-        messages=[{'role': 'system', 'content': f'You are a merge request description generator. You are given commit messages and you answer only with the generated description. Be concise.{emoji_prompt}'},
+        messages=[{'role': 'system', 'content': f'You are a merge request description generator. You are given commit messages, summarize them and you answer only with the generated description. Be concise.{emoji_prompt}'},
                   {'role': 'user', 'content': commit_message_str}],
         stream=True,
     )
