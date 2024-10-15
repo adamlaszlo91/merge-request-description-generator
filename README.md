@@ -32,7 +32,7 @@ Created Hotdog model 🌭"
 
 ## Usage
 ### Prerequisites
-- [Ollama](https://ollama.com/), either running on local or access to a remote server8
+- [Ollama](https://ollama.com/), either running on local or access to a remote server
 - [llama3.1](https://ollama.com/library/llama3.1) model installed with Ollama
 - [git](https://git-scm.com/) installed
 
